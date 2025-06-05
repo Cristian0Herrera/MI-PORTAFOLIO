@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Cristian Herrera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proyectos.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>
+
+                </span>
+            </div>
+            <div class="links">
+                <div class="link" data-section="menu" data-value="opcion1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#about">Sobre mí</a></div>
+                <div class="link" data-section="menu" data-value="opcion2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#skill">Habilidades</a></div>
+                <div class="link" data-section="menu" data-value="opcion3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Proyectos</a></div>
+                <div class="link" data-section="menu" data-value="opcion4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Contacto</a></div>
+
+           </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Sobre mí</a>
+                <a href="">Habilidades</a>
+                <a href="">Proyectos</a>
+                <a href="">Contacto</a>             
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="inicio" id="inicio">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+
+
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Cristian Herrera <span></span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Desarrollador Frontend y Tester Manual</p>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button>Contactame</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="about" id="about">
+            
+            <div class="about-content">
+                <h2 class="heading">Sobre mí</h2>
+                <p>Hola, soy Cristian Josué Herrera Bermúdez, un desarrollador front-end y tester manual enfocado en crear experiencias web funcionales e intuitivas. Me especializo en HTML, CSS, PHP, Laravel, JavaScript y MySQL Server. Disfruto enfrentar nuevos retos tecnológicos y perfeccionar mis habilidades para contribuir al éxito de cada proyecto en el que trabajo.</p>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button id="downloadBtn">Descargar CV</button>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="foto.png" height="452">
+            </div>
+        </section>
+
+        <section class="skill" id="skill">
+            <h2 class="heading">Habilidades</h2>
+            <div class="horizontal-bars">
+                <div class="bar">
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>PHP</span>
+                    </div>
+                    <div class="progress-line php">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Laravel</span>
+                    </div>
+                    <div class="progress-line laravel">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>MySQL Server</span>
+                    </div>
+                    <div class="progress-line mysql">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!--===== portfolio =====-->
+<section class="work section" id="portfolio">
+  <h2 class="section-title">Portfolio</h2>
+
+  <div class="work__container bd-grid">
+    <!-- Proyecto 1 -->
+    <div class="portfolio-item" onclick="openModal('modal1')">
+      <div class="image">
+        <img src="TRAVEL.png" alt="Proyecto 1" class="work__img">
+      </div>
+      <div class="hover-items">
+        <h3>Project 1</h3>
+      </div>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="portfolio-item" onclick="openModal('modal2')">
+      <div class="image">
+        <img src="PLANT.png" alt="Proyecto 2" class="work__img">
+      </div>
+      <div class="hover-items">
+        <h3>Project 2</h3>
+      </div>
+    </div>
+
+     <!-- Proyecto 2 -->
+     <div class="portfolio-item" onclick="openModal('modal2')">
+        <div class="image">
+          <img src="PLANT.png" alt="Proyecto 2" class="work__img">
+        </div>
+        <div class="hover-items">
+          <h3>Project 2</h3>
+        </div>
+      </div>
+
+     >
+
+   
+
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <div class="carousel">
+        <img src="travel.png" class="carousel-image active" alt="Imagen 1">
+        <img src="plant.png" class="carousel-image" alt="Imagen 2">
+        <img src="travel.png" class="carousel-image" alt="Imagen 3">
+        <button class="carousel-btn left" onclick="prevSlide('modal1')">&#10094;</button>
+        <button class="carousel-btn right" onclick="nextSlide('modal1')">&#10095;</button>
+      </div>
+      <h3 class="modal-title">Lingotter</h3>
+      <p class="modal-description">Aplicación Web desarrollada en Laravel que fortalece el aprendizaje del idioma inglés mediante contenido gamificado.</p>
+      <div class="tech-tags">
+        <span class="tag" style="background-color:#0ea5e9">Digital Ocean</span>
+        <span class="tag" style="background-color:#f59e0b">Cloudflare</span>
+        <span class="tag" style="background-color:#4f46e5">Laravel</span>
+        <span class="tag" style="background-color:#eab308">JavaScript</span>
+        <span class="tag" style="background-color:#f97316">HTML</span>
+        <span class="tag" style="background-color:#3b82f6">CSS</span>
+      </div>
+      <div style="margin-top: 20px;">
+        <a href="https://github.com/tuusuario/lingotter" target="_blank">
+          <i class="bx bxl-github" style="font-size: 40px; color: #333;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <div class="carousel">
+        <img src="plant.png" class="carousel-image active" alt="Imagen 1">
+        <img src="travel.png" class="carousel-image" alt="Imagen 2">
+        <img src="plant.png" class="carousel-image" alt="Imagen 3">
+        <button class="carousel-btn left" onclick="prevSlide('modal2')">&#10094;</button>
+        <button class="carousel-btn right" onclick="nextSlide('modal2')">&#10095;</button>
+      </div>
+      <h3 class="modal-title">EcoFarm</h3>
+      <p class="modal-description">Proyecto enfocado en la agricultura sostenible y tecnologías verdes para optimizar el cultivo.</p>
+      <div class="tech-tags">
+        <span class="tag" style="background-color:#0ea5e9">Node.js</span>
+        <span class="tag" style="background-color:#84cc16">MongoDB</span>
+        <span class="tag" style="background-color:#f97316">HTML</span>
+        <span class="tag" style="background-color:#3b82f6">CSS</span>
+      </div>
+      <div style="margin-top: 20px;">
+        <a href="https://github.com/tuusuario/ecofarm" target="_blank">
+          <i class="bx bxl-github" style="font-size: 40px; color: #333;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <div class="carousel">
+        <img src="plant.png" class="carousel-image active" alt="Imagen 1">
+        <img src="travel.png" class="carousel-image" alt="Imagen 2">
+        <img src="plant.png" class="carousel-image" alt="Imagen 3">
+        <button class="carousel-btn left" onclick="prevSlide('modal2')">&#10094;</button>
+        <button class="carousel-btn right" onclick="nextSlide('modal2')">&#10095;</button>
+      </div>
+      <h3 class="modal-title">EcoFarm</h3>
+      <p class="modal-description">Proyecto enfocado en la agricultura sostenible y tecnologías verdes para optimizar el cultivo.</p>
+      <div class="tech-tags">
+        <span class="tag" style="background-color:#0ea5e9">Node.js</span>
+        <span class="tag" style="background-color:#84cc16">MongoDB</span>
+        <span class="tag" style="background-color:#f97316">HTML</span>
+        <span class="tag" style="background-color:#3b82f6">CSS</span>
+      </div>
+      <div style="margin-top: 20px;">
+        <a href="https://github.com/tuusuario/ecofarm" target="_blank">
+          <i class="bx bxl-github" style="font-size: 40px; color: #333;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="heading text-center">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes una idea o proyecto y necesitas ayuda para desarrollarlo? Escríbeme y trabajemos juntos para hacerlo realidad.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    
+                        
+                    </div>
+    
+                    <div class="col-md-7">
+    
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" placeholder="Gmail">
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Asunto">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Mensaje"></textarea>
+                            </div>
+                            <button class="btn btn-block" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+            <footer class="footer-07">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 text-center">          
+                <ul class="ftco-footer-social p-0">
+                  <li class="ftco-animate"><a href="https://www.linkedin.com/in/cristianjosueherrera/" data-toggle="tooltip" data-placement="top" title="Linkedin"><span class="ion-logo-linkedin"></span></a></li>
+                  <li class="ftco-animate"><a href="https://github.com/Cristian0Herrera" data-toggle="tooltip" data-placement="top" title="Github"><span class="ion-logo-github"></span></a></li>
+                  <li class="ftco-animate"><a href="usss108822@ugb.edu.sv" data-toggle="tooltip" data-placement="top" title="Gmail"><span class="ion-ios-mail"></span></a></li>
+                  <li class="ftco-animate"><a href="+503 7621-6020" data-toggle="tooltip" data-placement="top" title="Teléfono"><span class="ion-ios-phone-portrait"></span></a></li>
+                </ul>
+                    </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-12 text-center">
+                            <p class="copyright">
+                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Cristian Herrera </a>
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+  <!-- cambio de idioma -->
+
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="floating-container">
+                <div class="floating-button">+</div>
+                <div class="element-container">
+            
+                        <a href="en/index.html"> <span class="float-element tooltip-left">
+                            <img src="assets/icons/us.svg" alt="" width="28">
+                            </a>
+                          </span>
+                          <a href="index.html"> <span class="float-element">
+                            <img src="assets/icons/es.svg" alt="" width="28">
+                            </a>
+                          </span>
+
+                </div>
+            </div>
+    
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            document.getElementById("downloadBtn").addEventListener("click", function() {
+                const link = document.createElement("a");
+                link.href = "docs/portafolio-cristian.pdf"; 
+                link.download = "portafolio-cristian.pdf"; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+
+<script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    function prevSlide(modalId) {
+      const modal = document.getElementById(modalId);
+      const images = modal.querySelectorAll('.carousel-image');
+      let currentIndex = [...images].findIndex(img => img.classList.contains('active'));
+      images[currentIndex].classList.remove('active');
+      const prevIndex = (currentIndex - 1 + images.length) % images.length;
+      images[prevIndex].classList.add('active');
+    }
+    function nextSlide(modalId) {
+      const modal = document.getElementById(modalId);
+      const images = modal.querySelectorAll('.carousel-image');
+      let currentIndex = [...images].findIndex(img => img.classList.contains('active'));
+      images[currentIndex].classList.remove('active');
+      const nextIndex = (currentIndex + 1) % images.length;
+      images[nextIndex].classList.add('active');
+    }
+    </script>
+
+
+    
+</body>
+</html>
