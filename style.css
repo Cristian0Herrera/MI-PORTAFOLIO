@@ -248,7 +248,8 @@ section{
 .about-content {
     text-align: left;
     line-height: 1.5;
-    margin-left: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .about-content  p {
     font-size: 1rem;
@@ -348,7 +349,10 @@ section {
         flex-direction: column;
     }
 
-
+.nav-container .links{
+        display: none;
+    }
+    
     .hamburg,.cancel{
         display: block;
     }
@@ -678,3 +682,453 @@ section {
         opacity: 1;
     }
 }
+
+/* PREMIOS */
+
+
+
+.card-list {
+   display: flex;
+  gap: 2rem; /* Espacio entre tarjetas */
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* O quítalo si NO quieres que se bajen en pantallas pequeñas */
+  padding: 2rem;
+}
+
+.card {
+	width: 90%;
+  max-width: 400px;
+  background-color: #FFF;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .05), 0 20px 50px 0 rgba(0, 0, 0, .1);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 1.25rem;
+  position: relative;
+  transition: .15s ease-in;
+	
+}
+
+.card-image img {
+	border-radius: 10px;
+	overflow: hidden;
+    max-width: 100%;
+	display: block;
+
+}
+
+.card-header {
+	margin-top: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	a {
+		font-weight: 600;
+		font-size: 1.375rem;
+		line-height: 1.25;
+		padding-right: 1rem;
+		text-decoration: none;
+		color: inherit;
+		will-change: transform;
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	
+	
+}
+
+
+
+.card-footer {
+	border-top: 1px solid #ddd;
+	padding-top: 1.25rem;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card-meta-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* ← este espacio es clave */
+  margin-top: 1rem; /* opcional, separación del título */
+}
+.card-meta {	
+	align-items: center;
+	color: #787878;
+    
+	&:first-child:after {
+		display: block;
+		content: "";
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		margin-left: .75rem;
+		margin-right: .75rem;
+	}
+	svg {
+		flex-shrink: 0;
+		width: 1em;
+		height: 1em;
+		margin-right: .25em;
+	}
+}
+
+/* TESTIMONIOS */
+
+
+figure.snip1390 {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgb(116 136 185);
+  padding: 30px;
+  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1390 figcaption {
+  width: 100%;
+}
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+  margin: 0;
+}
+figure.snip1390 h2,
+figure.snip1390 h4 {
+  font-weight: 300;
+}
+figure.snip1390 h2 {
+  color: #ffffff;
+}
+figure.snip1390 h4 {
+  color: #000000;
+}
+figure.snip1390 blockquote {
+  font-size: 1em;
+  padding: 45px 20px 40px 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: relative;
+}
+figure.snip1390 blockquote:before {
+  content: "\201C";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
+}
+figure.snip1390 .profile {
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  border: solid 5px #A6A57A;
+}
+
+.testimonio-lista {
+  display: flex;
+  flex-wrap: wrap; /* permite que bajen si no hay espacio */
+  justify-content: center; /* centra horizontalmente */
+  gap: 2rem; /* espacio entre tarjetas */
+  padding: 2rem;
+}
+
+
+/* INTERESES */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
+/* Defining the theme for the card: colors, fonts, spacing. 
+This uses CSS variables - so you only have to change the colors in one place */ 
+:root {
+  /* The color for your card background and background pattern */ 
+
+
+  /* Colors for the elements on your card */ 
+  --banner-bg: #1C0C5B;
+  --banner-txt: white;
+
+  /* Message area colors */ 
+  --message-bg: #F1EDE9;
+  --message-line: #94ACD4;
+  --message-txt: #333333;
+
+  /* Fonts */ 
+  --font-banner: 'Abril Fatface', cursive;
+  --font-text: 'Shadows Into Light', cursive;
+
+  /* Space and other details */
+  --space: 16px;
+  --space-xsm: 4px;
+  --space-sm: 8px;
+  --space-lg: 24px;
+  --space-xlg: 48px;
+}
+
+/* Base template configurations */ 
+
+.intereses {
+  display: flex;
+  flex-wrap: wrap; /* permite que las tarjetas se acomoden una debajo de otra en pantallas pequeñas */
+  justify-content: center;
+  gap: 2rem; /* espacio entre tarjetas */
+  padding: 2rem;
+}
+
+/* Asegúrate de que cada tarjeta tenga un ancho que se pueda ajustar */
+.bday-card {
+  flex: 1 1 320px; /* mínimo 320px, crece si hay espacio */
+  max-width: 420px;
+  height: auto;
+  padding-top: var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bday-card {
+  max-width: 420px;
+  height: 100%;
+  padding-top: var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bday-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 240px;
+  padding: var(--space-sm) var(--space-sm) var(--space-xlg);
+  background: white;
+  border-radius: 4px;
+  box-shadow: var(--space-xsm) var(--space-xsm) 15px rgba(0,0,0, .15);
+
+  /* Edit the Translate property below to adjust the position of your picture */ 
+  transform: rotate(5deg) translate(20px, 45px);
+}
+
+.bday-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bday-decor--container {
+  position: relative;
+}
+
+.bday-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-size: 35px;
+  z-index: 1;
+
+  /* Play around with those properties to change your banner styling */ 
+  color: var(--banner-txt);
+  font-family: var(--font-banner);
+  text-transform: uppercase;
+  transform: rotate(-5deg);
+  gap: var(--space-sm) 0;
+}
+
+.bday-banner span {
+  background: var(--banner-bg);
+  padding: var(--space) var(--space-lg);
+  flex-grow: 0;
+}
+
+.bday-banner span:nth-child(2) {
+  margin-left: var(--space-lg);
+}
+
+
+.bday-message {
+  max-width: 80%;
+  padding: 35px var(--space);
+  font-family: var(--font-text);
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--message-txt);
+  background-color: var(--message-bg);
+}
+
+/* Paper */
+.bday-message--paper {
+  background: repeating-linear-gradient(var(--message-bg), var(--message-bg) 31px, var(--message-line) 31px, var(--message-line) 32px);
+  box-shadow: var(--space-xsm) var(--space-xsm) 15px rgba(0,0,0, .15);
+}
+/* End - Paper */
+
+/* Block right */
+.bday-message--block-right {
+  position: relative;
+}
+
+.bday-message--block-right::before {
+  content: "";
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--paper);
+  z-index: -1;
+}
+/* End - Block right */
+
+/* Block left */
+.bday-message--block-left {
+  position: relative;
+}
+
+.bday-message--block-left::before {
+  content: "";
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--paper);
+  z-index: -1;
+}
+/* End - Block left */
+
+
+.bday-decor {
+  /* Emojis are text - so here we are setting a font-size to make them bigger */ 
+  font-size: 96px;
+}
+
+/* Positioning for the emojis - play around with the values to change the placement of your decorations */ 
+.bday-decor--top-right { 
+  position: absolute;
+  bottom: -70px;
+  right: -20px;
+}
+
+.bday-decor--top-left {
+  position: absolute;
+  bottom: 0px;
+  left: -25px;
+}
+
+.bday-decor--bottom-right {
+  position: absolute; 
+  right: 20px;
+}
+
+/* Animations */ 
+
+/* Here we designate an specific animation to an specific element using a class. We have a defined name, time and iteration-count for each animation. We can also define the origin point from which the animation will happen - the default is the center. */  
+.zoom-left-in-out {
+  animation-name: zoom-left-in-out;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+  transform-origin: left bottom;
+}
+
+/* Here we specify what will change on the element when they animate */ 
+@keyframes zoom-left-in-out {
+  /* Animation will start and end with the same settings */ 
+  0%, 100% {
+    transform: scale(0.95) rotate(2deg);
+  }
+
+  /* Animation will reach those settings 50% into the duration time we set on the declaration */
+  50% {
+    transform: scale(1) rotate(-2deg);
+  }
+}
+
+/* pulse */ 
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+/* pulse - End */
+
+/* float */ 
+.float {
+  animation-name: float;
+  animation-duration: 1.9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+/* float - End */
+
+/* spin */ 
+.spin {
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* spin - End */
