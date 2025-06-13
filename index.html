@@ -48,8 +48,10 @@
                 <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Cristian Herrera <span></span></h1>
                 <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Desarrollador Frontend y Tester Manual</p>
                 <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                    <button>Contactame</button>
-                </div>
+                <a href="#contact">
+                  <button>Contáctame</button>
+                </a>                
+              </div>
             </div>
         </div>
     </section>
@@ -462,7 +464,6 @@ Puedo decir que Cristian podría integrarse sin problema en cualquier tipo de em
 
   <div class="bday-card">
   
-  <!-- Top part of the card: image + decorations -->
   <div class="bday-decor--container">
     <div class="bday-pic "> 
       <img src="codigo.jpg">
@@ -474,7 +475,6 @@ Puedo decir que Cristian podría integrarse sin problema en cualquier tipo de em
   <h1 class="bday-banner">
     <span>desarrollo</span> <span>frontend</span>
   </h1> 
-  <!-- Message + decoration -->
   <div class="bday-message bday-message--paper">
     <p>Interesado en el desarrollo frontend con tecnologías modernas como HTML, CSS y JavaScript para crear interfaces accesibles e intuitivas. <br> </p> 
     <p class="bday-decor bday-decor--bottom-right zoom-left-in-out">📚</p>
@@ -484,7 +484,6 @@ Puedo decir que Cristian podría integrarse sin problema en cualquier tipo de em
 
   <div class="bday-card">
   
-  <!-- Top part of the card: image + decorations -->
   <div class="bday-decor--container">
     <div class="bday-pic "> 
       <img src="equipo.jpg">
@@ -496,7 +495,6 @@ Puedo decir que Cristian podría integrarse sin problema en cualquier tipo de em
   <h1 class="bday-banner">
     <span>Trabajo</span> <span>Colaborativo</span>
   </h1> 
-  <!-- Message + decoration -->
   <div class="bday-message bday-message--paper">
     <p>Interesado por la colaboración entre testers y desarrolladores para lograr productos más estables y funcionales.<br> </p> 
     <p class="bday-decor bday-decor--bottom-right zoom-left-in-out">📌</p>
@@ -505,6 +503,21 @@ Puedo decir que Cristian podría integrarse sin problema en cualquier tipo de em
   </div>
 
 </section>
+
+
+<section id="certificados" class="certificados-section">
+          <h2 class="section-title">Publicaciones</h2>
+          <div class="certificados-container">
+            <div class="certificado-card" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="card_title">Investigacón cientifica sobre:</h2>
+              <h6 style="text-align: justify;"> La influencia de la música en la salud mental de los estudiantes de ingeniería en 
+sistemas y redes informáticas de la Universidad Gerardo Barrios, campus Usulutan, ciclo I </h6>
+            <a id="downloadBtn" href="docs/envestigacion.pdf" target="_blank" class="btn-ver-certificado">
+              <i class="fa-solid fa-up-right-from-square"></i> Ver publicación
+            </a>
+          </div>                
+          </div>
+      </section>
 
 
     <!-- Contacto -->
@@ -603,6 +616,19 @@ Puedo decir que Cristian podría integrarse sin problema en cualquier tipo de em
                 document.body.removeChild(link);
             });
         </script>
+
+        <script>
+            document.getElementById("downloadBtnEnvi").addEventListener("click", function() {
+                const link = document.createElement("a");
+                link.href = "docs/envestigacion.pdf"; 
+                link.download = "envestigacion.pdf"; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        </script>
+
+        
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
